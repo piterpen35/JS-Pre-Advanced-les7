@@ -17,7 +17,7 @@ $('.serchBtn').click(function(e) {
                 $.each(data.Search,function(index, value) {
                     listCreat += '<li>';
                     if (value.Poster == 'N/A') {
-                        listCreat += '<img src="/img/noposter.png"> ';
+                        listCreat += '<img src="/noposter.png"> ';
                     } else{
                         listCreat += '<img src="' + value.Poster + '"> ';
                     }
@@ -52,7 +52,7 @@ $('.serchBtn').click(function(e) {
                     $.each(modal_deta, function(index, value) {
                         let content = '';
                         if (modal_deta.Poster == 'N/A') {
-                            content += '<img src="/img/noposter.png"> ';
+                            content += '<img src="/noposter.png"> ';
                         } else {
                             content += '<img src="' + modal_deta.Poster + '"> ';
                         }
